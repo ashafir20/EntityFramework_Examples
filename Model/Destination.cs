@@ -24,6 +24,9 @@ namespace Model
     public string TravelWarnings { get; set; }
     public string ClimateInfo { get; set; }
 
+    [MaxLength(10)]
+    public string LastName { get; set; }
+
     public virtual List<Lodging> Lodgings { get; set; }
   }
 }
